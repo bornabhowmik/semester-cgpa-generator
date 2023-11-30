@@ -6,19 +6,18 @@ Welcome to the Semester CGPA Generator project! This application assists student
 
 This C++ project aims to simplify the process of calculating CGPA for a semester by providing an intuitive interface for inputting subject marks and obtaining the CGPA. With its user-friendly features, it streamlines the otherwise complex task of computing the semester's cumulative performance.
 
-![Input Screenshot](screenshots/input.jpg)
-*Screenshot: Input Interface*
-
-![Output Screenshot](screenshots/output.jpg)
-*Screenshot: Output Interface*
-
 ## Features
 
 ### Input Results in Marks
-- Enables users to input subject marks for calculation.
+- Enables users to input subject marks, credit-hours, credit-hours-attempts for calculation.
+![Input Screenshot](screenshots/input.jpg)
+*Screenshot: Input Interface*
+
 
 ### Output Calculate CGPA
 - Automatically computes the CGPA based on the provided marks.
+![Output Screenshot](screenshots/output.jpg)
+*Screenshot: Output Interface*
 
 ## Getting Started
 
