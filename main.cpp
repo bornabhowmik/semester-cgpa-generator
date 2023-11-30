@@ -77,3 +77,38 @@ double calculate(double marks, double creditHour, double attempts) {
 
     return totalGradePoints/totalCreditsAttempts;
 }
+
+
+// The main function 
+int main() {
+    system("cls");
+	system("Color 07");
+
+    cout << "\n\n";
+    cout << "\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
+    cout << "\t\t\t~                                                                     ~"<<endl;
+	cout << "\t\t\t~                   WELCOME! Calculate CGPA Here                      ~"<<endl;
+	cout << "\t\t\t~                                                                     ~"<<endl;
+    cout << "\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
+    cout << endl << endl << endl;
+
+    cout << "\tEnter number of Semester: ";
+    int totalSemester, totalCourses;
+    cin >> totalSemester;
+    cout << "\n";
+
+    while(totalSemester--) {
+        cout << "\t\tEnter number of Courses: ";
+        cin >> totalCourses;
+        cout << "\n";
+
+        double marks, creditHour, attempts, gradesSum = 0, creditsSum = 0;
+
+        for(int i=1; i<=totalCourses; i++) {
+            cout << "\t\t\tFor course: " << i << "" << endl;
+            cout << "\t\t\t\tEnter - Marks, Credit Hour and Credit Hour Attempt: "; 
+            cin >> marks >> creditHour >> attempts;
+            creditsSum += creditHourAttempts(creditHour, attempts);
+            gradesSum += calculateGradePoints(marks, creditHour, attempts);
+            cout << endl;
+        }
