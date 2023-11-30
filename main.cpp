@@ -51,3 +51,10 @@ double gradePoints(string grade) {
         return 0.00;
     }
 }
+
+// Function to get Credit Hours Attempts
+double creditHourAttempts(double creditHour, double attempts) {
+    double creditHourAttempts;
+
+    return creditHourAttempts = creditHour*attempts;
+}
