@@ -112,3 +112,29 @@ int main() {
             gradesSum += calculateGradePoints(marks, creditHour, attempts);
             cout << endl;
         }
+
+
+        // printing output
+
+        cout << "\t\t\t-----------------------------------------------------------------------"<<endl;
+        cout << "\t\t\t|                             Your Result                             |"<<endl;
+        cout << "\t\t\t-----------------------------------------------------------------------"<<endl;
+        cout << endl;
+        
+        for(int i=1; i<=totalCourses; i++) {
+            cout << "\t\t\t\t";
+            cout << "Course " << i <<  "  Credit Hour: " ;
+            cout << creditHour << "  Attempts: " ;
+            cout << attempts << "  " ;
+            //cout << marksToGrade(marks);
+            cout << endl;
+            cout << endl;
+        }
+
+        cout << "\t\t\t-----------------------------------------------------------------------"<<endl;
+        cout << "\t\t\t\t\t\tYour total CGPA is " << gradesSum/creditsSum << endl;    
+        cout << "\t\t\t-----------------------------------------------------------------------"<<endl;
+    }
+
+    return 0;
+}
