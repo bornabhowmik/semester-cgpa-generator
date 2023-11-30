@@ -67,3 +67,13 @@ double calculateGradePoints(double marks, double creditHour, double attempts) {
 
     return storeCreditHourAttempts*storeGradePoints;
 }
+
+// Function to add Calculating CGPA
+double calculate(double marks, double creditHour, double attempts) {
+    double totalCreditsAttempts = 0;
+    double totalGradePoints = 0;
+    totalCreditsAttempts += calculateGradePoints(marks, creditHour, attempts);
+    totalGradePoints += creditHourAttempts(creditHour, attempts);
+
+    return totalGradePoints/totalCreditsAttempts;
+}
