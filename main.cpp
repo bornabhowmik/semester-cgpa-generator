@@ -26,3 +26,28 @@ string marksToGrade(double marks) {
         return "Grade: F";
     }
 }
+
+// Function to set Grade Points from Grade
+double gradePoints(string grade) {
+    if(grade == "Grade: A+") {
+        return 4.00;
+    } else if (grade == "Grade: A") {
+        return 3.75;
+    } else if (grade == "Grade: A-") {
+        return 3.50;
+    } else if (grade == "Grade: B+") {
+        return 3.25;
+    } else if (grade == "Grade: B") {
+        return 3.00;
+    } else if (grade == "Grade: B-") {
+        return 2.75;
+    } else if (grade == "Grade: C+") {
+        return 2.50;
+    } else if (grade == "Grade: C") {
+        return 2.25;
+    } else if (grade == "Grade: C-") {
+        return 2.00;
+    } else {
+        return 0.00;
+    }
+}
