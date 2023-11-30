@@ -58,3 +58,12 @@ double creditHourAttempts(double creditHour, double attempts) {
 
     return creditHourAttempts = creditHour*attempts;
 }
+
+// Function to Calculate Grade Points from Credit hour attempts and total grade points
+double calculateGradePoints(double marks, double creditHour, double attempts) {
+    double storeCreditHourAttempts = creditHourAttempts(creditHour, attempts);
+    string storeGrades = marksToGrade(marks);
+    double storeGradePoints = gradePoints(storeGrades);
+
+    return storeCreditHourAttempts*storeGradePoints;
+}
